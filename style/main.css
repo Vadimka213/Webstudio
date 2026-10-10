@@ -102,7 +102,7 @@ body {
   display: flex;
   align-items: center;
 }
-.heading-logo {
+.heading__logo {
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-size: 24px;
@@ -112,36 +112,36 @@ body {
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  .heading-logo {
+  .heading__logo {
     font-size: 24px;
     letter-spacing: 0.72px;
     margin-right: 88px;
   }
 }
 @media (min-width: 1200px) {
-  .heading-logo {
+  .heading__logo {
     font-size: 26px;
     letter-spacing: 0.78px;
     margin-right: 93px;
   }
 }
-.heading-span {
+.heading__span {
   color: var(--link-color);
 }
-.heading-nav {
+.heading__nav {
   text-decoration: none;
   display: none;
 }
 @media (min-width: 768px) {
-  .heading-nav {
+  .heading__nav {
     display: block;
   }
 }
-.heading-list {
+.heading__list {
   display: flex;
   gap: 50px;
 }
-.heading-link {
+.heading__link {
   position: relative;
   color: var(--main-color);
   font-size: 14px;
@@ -149,10 +149,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
-.heading-link:hover {
+.heading__link:hover {
   color: var(--link-color);
 }
-.heading-link:after {
+.heading__link:after {
   content: "";
   position: absolute;
   left: 0;
@@ -164,41 +164,41 @@ body {
   opacity: 0;
   transition: opacity 250ms;
 }
-.heading-link:hover::after {
+.heading__link:hover::after {
   opacity: 1;
 }
-.heading-spisok {
+.heading__spisok {
   display: none;
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  .heading-spisok {
+  .heading__spisok {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 }
 @media (min-width: 1200px) {
-  .heading-spisok {
+  .heading__spisok {
     flex-direction: row;
     gap: 30px;
   }
 }
-.heading-element:last-child .heading-icons {
+.heading__element:last-child .heading__icons {
   width: 10px;
   height: 16px;
 }
-.heading-element:last-child .heading-icons:hover {
+.heading__element:last-child .heading__icons:hover {
   fill: #2196f3;
 }
 
-.heading-icons {
+.heading__icons {
   width: 16px;
   height: 12px;
   fill: currentColor;
 }
 
-.heading-adress {
+.heading__adress {
   color: var(--text-color);
   font-size: 14px;
   font-weight: 500;
@@ -210,20 +210,20 @@ body {
   transition: color 250ms ease;
 }
 
-.heading-adress:hover,
-.heading-adress:focus {
+.heading__adress:hover,
+.heading__adress:focus {
   color: var(--link-color);
 }
 
-.heading-adress:hover .heading-icons {
+.heading__adress:hover .heading__icons {
   fill: #2196f3;
 }
 
-.heading-adress:hover .heading-icons {
+.heading__adress:hover .heading__icons {
   fill: #2196f3;
 }
 
-.heading-logo:hover {
+.heading__logo:hover {
   animation: logoRotate 0.7s;
 }
 
